@@ -1,7 +1,9 @@
-﻿let configuration = Configuration.create {
+﻿open UwebProxy
+
+let configuration = Configuration.create {
     Configuration.createEmpty() with 
         Port = 9865
-        Requests = [ ]
+        Requests = [ useReverseProxyByHost "127.0.0.40" "http://fritz.box"]
 }
 
 let server = Server.create configuration 
