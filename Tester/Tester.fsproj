@@ -12,6 +12,6 @@
     <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="UwebServer" Version="4.0.0" />
+    <PackageReference Include="UwebServer" Version="4.1.0" />
   </ItemGroup>
 </Project>
