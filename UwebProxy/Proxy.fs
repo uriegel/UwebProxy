@@ -3,7 +3,8 @@ module UwebProxy
 open System
 open Session
 open System.Net
-open ActivePatterns
+open FSharpTools
+open FSharpTools.ActivePatterns
 
 let private proxyRequest (url: string) (requestSession: RequestSession) =
     async {
